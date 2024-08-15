@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="./css/patrocinio.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="name">
+          <h1>Rebeca Andrade</h1>
+        </div>
+  
+    <nav class="navbar">
+        <a href="http://127.0.0.1:5500/home.html">Home</a>
+        <a href="http://127.0.0.1:5500/conquistas.html">Conquistas</a>
+        <a href="http://127.0.0.1:5500/patrocinio.html" class="active">Patrocínio</a>
+    </nav>
+</header>
+
+<section class="tela-dividida">
+    <div class="descricao">
+        <div class="textoapoio">
+            <p>Patrocinar Rebeca Andrade é uma oportunidade única para as empresas que desejam aumentar sua visibilidade ao mesmo tempo em que apoiam uma atleta extraordinária que representa o melhor do esporte brasileiro. Rebeca, que superou inúmeras adversidades para se tornar uma das maiores ginastas do mundo, traz consigo uma história de resiliência, determinação e sucesso.</p>
+            <br>
+            <p>Com uma carreira repleta de conquistas, incluindo medalhas de ouro, prata e bronze nas Olimpíadas recente de Paris 2024, Rebeca não é apenas uma atleta de alto desempenho, mas também uma inspiração para milhões de brasileiros. Ela tem a capacidade de elevar o moral de sua equipe e servir como um modelo de dedicação e disciplina para os jovens atletas.</p>
+            <br>
+            <p>Além disso, ao patrocinar Rebeca, as empresas se associam a uma figura que desafia estereótipos e promove a inclusão e diversidade no esporte. Sua visibilidade e popularidade garantem um grande retorno de imagem para as marcas que a apoiam, fortalecendo o reconhecimento e o prestígio junto ao público.</p>
+            <br>
+            <p>Investir em Rebeca Andrade não é apenas um ato de apoio ao esporte brasileiro, mas também uma estratégia eficaz para construir uma marca que se alinha com valores de superação, excelência e compromisso social.<br>​
+                E assim, vermos cada vez mais essa imagem de fundo.</p>
+        </div>
+    </div>
+
+    <div class="local-formulario">
+        <div class="espaco-form">
+            <h1 class="titulo">Formulário Patrocinador</h1>
+            <form>
+                <div class="dadosempresa">
+                    <fieldset>
+                        <legend >DADOS DA EMPRESA</legend>
+                        <label for="nome">Nome da empresa:</label>
+                        <input type="text" name="nome">
+                        <label for="cnpj">CNPJ:</label>
+                        <input type="text" name="cnpj">  
+                        <label for="telefone">Telefone:</label>
+                        <input type="text" name="telefone">
+                        <label for="emailinserido">E-mail para contato:</label>
+                        <input type="email" name="emailinserido">
+                        <label for="website">Website:</label>
+                        <input type="text" name="website" placeholder="Caso houver" class="campowebsite">
+                    </fieldset>
+                </div>
+                <div class="detalhespatrocinio">
+                    <fieldset>
+                        <legend>DETALHES PATROCÍNIO</legend>
+                        <label for="valorpatrocinio">Valor Patrocínio:</label>
+                        <input type="text" name="valorpatrocinio">
+                        <label for="duracaopatrocinio">Duração do Patrocínio:</label>
+                        <input type="text" name="duracaopatrocinio">
+                        <label for="objetivopatrocinio">Objetivo do Patrocínio:</label>
+                        <input type="text" list="objetivos" name="objetivopatrocinio">
+                        <label for="modalidadepatrocinio">Modalidade do Patrocínio:</label>
+                        <input type="text" list="modalidades" name="modalidadepatrocinio" class="campomodalidade">
+
+                        <datalist id="modalidades">
+                            <option value="Financeiro"></option>
+                            <option value="Material Esportivo"></option>
+                            <option value="Alimentação"></option>
+                        </datalist>
+
+                        <datalist id="objetivos">
+                            <option value="Visibilidade"></option>
+                            <option value="Engajamento"></option>
+                            <option value="Financeiramente"></option>
+                        </datalist>    
+                    </fieldset>
+                </div>
+                <div class="outros">
+                    <fieldset>
+                        <legend>COMPLEMENTO</legend>
+                        <label for="historicopatrocinio">Histórico de Patrocínios anteriores:</label>
+                        <input type="text" name="historicopatrocinio" placeholder="Atletas, Marca, etc.">
+                        <label for="comentario">Comentários ou Propostas adicionais:</label>
+                        <textarea name="comentario" class="campocomentario"></textarea>
+                    </fieldset>
+                </div>
+                <div class="botoes">
+                    <input type="reset" value="Limpar"/>
+                    <input type="submit" value="Enviar"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Contato e Redes Sociais:</p>
+    <div class="social-icons">
+        <a href="https://mpcrio@mpcrio.com/" target="_blank"><i class="e-mail"><img src="img/e-mail.png" alt="Contato" width="30px" height="30px"></i></a>
+        <a href="https://www.instagram.com/rebecarandrade/?hl=pt-br" target="_blank"><i class="instagram"><img src="img/instagram.png" alt="Instagram Rebeca Andrade" width="30px" height="30px"></i></a>
+        <a href="https://www.tiktok.com/@rebecaandrade4?lang=pt-BR" target="_blank"><i class="tiktok"><img src="img/tik-tok.png" alt="tiktok Rebeca Andrade" width="30px" height="30px"></i></a>
+        <a href="https://www.threads.net/@rebecarandrade" target="_blank"><i class="threads"><img src="img/threads.png" alt="threads Rebeca Andrade" width="30px" height="30px"></i></a>
+    </div>
+</footer>
+    
+</body>
+</html>

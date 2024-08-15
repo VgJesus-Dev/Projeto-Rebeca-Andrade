@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+.header {
+    position: sticky;
+    height: 80px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(7, 92, 7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+}
+
+.name {
+    font-size: 25px;
+    color: rgb(236, 248, 1);
+    text-decoration: none;
+    font-weight: 700;
+    font-family: system-ui;
+    font-style: italic;
+}
+
+.navbar a {
+    font-size: 20px;
+    color: yellow;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: system-ui;
+    margin-left: 30px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: white;
+}
+/* Ouro */
+.ouro {
+    height: 40vh;
+    background: linear-gradient(-90deg, #fdfdfd 40%, #031540 60%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.ouro h2{
+    color: rgb(255, 255, 255);
+    font-size: 20;
+    font-family: system-ui;
+    margin-top: -250px;
+    margin-left: 180px;
+    text-align:center;
+
+    
+}
+
+.flip-card-ouro {
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    color: rgb(255, 255, 255);
+    margin-left: -1380px;
+    margin-top: 90px;
+}
+
+.circle-gold  img{
+    width: 300px;
+    height: 300px;
+    
+   
+}
+
+.flip-card-ouro:hover .flip-card-inner {
+    transform: rotateY(-180deg);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    
+}
+
+.flip-card-ouro .flip-card-back-ouro {
+    transform: rotateY(-180deg);
+    
+}
+
+.flip-card-inner {
+    position: relative;
+    
+    
+}
+
+.flip-card-front-ouro {
+    position: absolute;
+    backface-visibility: hidden;
+    text-align: center;
+    font-family: system-ui;
+    font-size: 15px;
+    
+    
+}
+
+.flip-card-back-ouro {
+    position: absolute;
+    backface-visibility: hidden;
+    text-align:justify;
+    color: rgb(255, 255, 255);
+    font-family: system-ui;
+    font-size: 10px;
+    
+}
+
+/* Prata */
+
+.prata {
+    height: 40vh;
+    background: linear-gradient(-90deg, #ffffff 40%, #031540 60%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.prata h2{
+    color: rgb(255, 255, 255);
+    font-size: 20;
+    font-family: system-ui;
+    margin-top: -170px;
+    margin-left: 180px;
+    text-align:center;
+    
+}
+
+.flip-card-prata {
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    color: rgb(255, 255, 255);
+    margin-left: -1370px;
+    margin-top: 180px;
+}
+
+.circle-silver  img{
+    width: 300px;
+    height: 300px;
+    
+   
+}
+
+.flip-card-prata:hover .flip-card-inner {
+    transform: rotateY(-180deg);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    
+}
+
+.flip-card-prata .flip-card-back-prata {
+    transform: rotateY(-180deg);
+    
+}
+
+.flip-card-inner {
+    position: relative;
+    
+    
+}
+
+.flip-card-front-prata {
+    position: absolute;
+    backface-visibility: hidden;
+    text-align: center;
+    font-family: system-ui;
+    font-size: 15px;
+    
+    
+}
+
+.flip-card-back-prata {
+    position: absolute;
+    backface-visibility: hidden;
+    text-align: justify;
+    font-family: system-ui;
+    color: rgb(255, 255, 255);
+    font-family: system-ui;
+    font-size: 10px;
+}
+
+/* Bronze */
+
+.bronze{
+    height: 40vh;
+    background: linear-gradient(-90deg, #fdfdfd 40%, #031540 60%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bronze h2{
+    color: rgb(255, 255, 255);
+    font-size: 20;
+    font-family: system-ui;
+    margin-top: -70px;
+    margin-left: 180px;
+    text-align:center;
+    
+}
+
+.flip-card-bronze {
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    color: rgb(255, 255, 255);
+    margin-left: -1365px;
+    margin-top: 335px;
+}
+
+.circle-bronze  img{
+    width: 310px;
+    height: 300px;
+    
+   
+}
+
+.flip-card-bronze:hover .flip-card-inner {
+    transform: rotateY(-180deg);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    
+}
+
+.flip-card-bronze .flip-card-back-bronze {
+    transform: rotateY(-180deg);
+    
+}
+
+.flip-card-inner {
+    position: relative;
+    
+    
+}
+
+.flip-card-front-bronze {
+    position: absolute;
+    backface-visibility: hidden;
+    text-align: center;
+    font-family: system-ui;
+    font-size: 15px;
+    
+    
+}
+
+.flip-card-back-bronze {
+    position: absolute;
+    backface-visibility: hidden;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    font-family: system-ui;
+    font-size: 10px;
+}
+
+/* Carrossel */
+
+.slides{ 
+    height: 30vh;
+    background: linear-gradient(-90deg, #fdfdfd 40%, #031540 60%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    padding: 0;
+    
+    }
+
+.carousel-container {
+    width: 900px; /* largura slide */
+    height: 1662px; /* altura slide */
+    overflow: hidden;
+    position: relative;
+    margin-left: 650px;
+    margin-top:-1443px ;
+    
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    animation: slide 30s infinite linear ;
+    animation-direction: reverse;
+    margin-bottom: 0;
+    
+    
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+   
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+/* Rodapé */
+
+footer {
+   
+    background-color: rgb(7, 92, 7);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-family: system-ui;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+}
+
+/* Responsividade */
+   
+
+@media (max-width: 800px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .name {
+        font-size: 10px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        margin-left: 10px;
+    } 
+
+    /* Ouro */
+    .ouro {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .ouro h2 {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .flip-card-ouro {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+
+    /* Prata */
+
+    .prata {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .prata h2 {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .flip-card-prata {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    /* Bronze */
+
+    .bronze {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .bronze h2 {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .flip-card-bronze {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .carousel-container {
+        width: 90%; 
+        height: 310px; 
+        margin-left: 35px; 
+        margin-top: 0; 
+    }
+
+
+footer {
+
+        padding: 15px 0; 
+        font-size: 14px; 
+}
+}
